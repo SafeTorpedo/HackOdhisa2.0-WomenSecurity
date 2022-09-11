@@ -44,3 +44,73 @@
     outline: none;
     cursor: pointer;
 }
+
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.chatbox__support {
+    background: #f9f9f9;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0, 1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.chatbox__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.chatbox__header__icon {
+    margin-right: 10px;
+}
+
+.chatbox__header__content__title {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.chatbox__header__description {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.chatbox__messages {
+    padding: 0 20px;
+}
+
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 20px;
+}
+
+.chatbox_footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+/* classes from updateChat left (3)*/
