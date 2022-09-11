@@ -48,13 +48,12 @@ class Chatbox {
 }
 
 const App = () => {
-    //creating object
-    return React.createElement("div", { className: "App" }, [
-        React.createElement(chatBot),
-    ]);
-    // To be instated after completing the methods
-    // const chatbox = new Chatbox();
-    // chatbox.display();
+    return React.createElement(chatBot, {}, [React.createElement(obj)]);
+};
+
+const obj = () => {
+    const chatbox = new Chatbox(); //will only work after the fetching methods are done
+    return chatbox.display();
 };
 
 export default App;
