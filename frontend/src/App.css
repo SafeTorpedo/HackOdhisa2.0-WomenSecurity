@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling the Chat Box */
+.chatbox {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    z-index: -123456;
+
+    transition: all 0.5 ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.chatbox__button {
+    text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: yellow;
+}
+
+.send__button {
+    padding: 4px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
